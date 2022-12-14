@@ -1,0 +1,147 @@
+/* devtube.html Styling */
+
+body {
+	margin: 50px;
+}
+h1 {
+	text-align: center;
+}
+#container {
+	border: 1px solid #666;
+	max-height: 720px;
+	width: 100%;
+}
+#upper_section {
+	border: 1px solid #666;
+	height: 310px;
+	display: flex;
+	justify-content: space-evenly;
+	/* padding: 10px; */
+	/* margin: 20px; */
+}
+#lower_section {
+	display: flex;
+	justify-content: space-evenly;
+	border: 1px solid #666;
+	height: 277px;
+	padding: 10px;
+	/* margin: 20px; */
+}
+#compiler {
+	border: 1px solid #666;
+	height: 250px;
+	margin: 5px;
+	width: 60%;
+
+	/* Temporary Placeholder Details Styling */
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+#youtube {
+	border: 1px solid #666;
+	height: 300px;
+	margin: 5px;
+	width: 70%;
+
+	/* Temporary Placeholder Details Styling */
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+#playlist {
+	border: 1px solid #666;
+	height: 300px;
+	margin: 5px;
+	width: 30%;
+
+	/* Temporary Placeholder Details Styling */
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+#pomodoro {
+	border: 1px solid #666;
+	height: 250px;
+	margin: 5px;
+	width: 30%;
+}
+
+#timerCounter {
+	height: 150px;
+	border: #666 solid 1px;
+	margin: 2px;
+
+	/* Temporary Placeholder Details Styling */
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#sessions {
+	height: 90px;
+	border: #666 1px solid;
+	margin: 2px;
+
+	/* Temporary Placeholder Details Styling */
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#button {
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+}
+
+#button {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4caf50;
+	color: white;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+
+#button:hover {
+	background-color: #45a049;
+}
+
+body.night-mode {
+	background-color: #000;
+	color: #fff;
+}
+
+/* index.html Styling */
+
+#login {
+	max-width: 400px;
+	border: #666 solid 1px;
+	padding: 20px;
+}
+
+#signin {
+	border: #666 solid 1px;
+	text-align: center;
+	padding: 5px;
+	width: 50%;
+	text-decoration: none;
+	color: #666;
+}
+
+.inputs {
+	margin: 10px;
+}
+
+#bod {
+	margin: auto;
+	display: block;
+}
+#loginContainer {
+	width: 400px;
+}
