@@ -4,23 +4,6 @@ nightModeToggle.addEventListener("click", function () {
 	document.body.classList.toggle("night-mode");
 });
 
-// Load the IFrame Player API code asynchronously.
-var tag = document.createElement("script");
-tag.src = "https://www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// Replace the 'ytplayer' element with an <iframe> and
-// YouTube player after the API code downloads.
-var player;
-function onYouTubePlayerAPIReady() {
-	player = new YT.Player("ytplayer", {
-		height: "360",
-		width: "640",
-		videoId: "M7Z2tgJo8Hg",
-	});
-}
-
 document.getElementById("fom").addEventListener("submit", displayDevTube);
 document.getElementById("sign").addEventListener("submit", displayDevTube);
 document
@@ -46,7 +29,7 @@ function displayDevTube(e) {
 	setTimeout(() => {
 		p.style.display = "none";
 		devTube.style.display = "contents";
-	}, 5000);
+	}, 1000);
 }
 
 function removeSignup() {
@@ -61,4 +44,41 @@ function removeSignup() {
 	additionalMessage.style.display = "none";
 	signup.style.display = "none";
 	signin.style.display = "contents";
+}
+
+function search() {
+	document.getElementById("fomu").addEventListener("submit", (e) => {
+		e.preventDefault();
+		let search = e.target.search.value;
+		fetchSearch(search);
+	});
+}
+search();
+
+function fetchSearch(search) {
+	let apiKey = "AIzaSyAxliesP43YasDnhL_YGvvwAwlHMTtkaQY";
+	fetch(
+		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=2&q=${search}`
+	)
+		.then((response) => response.json())
+		// .then(data => console.log(data))
+		.then(renderResult);
+}
+
+function renderResult(data) {
+	let list = document.getElementById("res");
+
+	data.items.forEach((element) => {
+		let listed = document.createElement("li");
+		let vids = document.createElement("a");
+		let thumbnail = document.createElement("img");
+
+		thumbnail.src = element.snippet.thumbnails.default.url;
+		vids.href = `https://www.youtube.com/watch?v=${element.id.videoId}`;
+		vids.textContent = element.snippet.title;
+
+		list.appendChild(listed);
+		listed.appendChild(vids);
+		vids.appendChild(thumbnail);
+	});
 }
