@@ -30,9 +30,23 @@ function displayDevTube(e) {
 	e.preventDefault();
 	let login = document.getElementById("bod");
 	let devTube = document.getElementById("devtube");
+	let body = document.querySelector("body");
 
 	login.style.display = "none";
-	devTube.style.display = "contents";
+
+	let p = document.createElement("p");
+
+	p.innerHTML = `
+	<p>You are being redirected to DevTube in 5 seconds...</p>
+	<p>If not redirected, click <button> here </button> </p>
+	`;
+	p.style.fontSize = "20px";
+	body.appendChild(p);
+
+	setTimeout(() => {
+		p.style.display = "none";
+		devTube.style.display = "contents";
+	}, 5000);
 }
 
 function removeSignup() {

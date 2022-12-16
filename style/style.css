@@ -5,10 +5,7 @@ body {
 	background: #ceb5b7;
 	/* margin: auto; */
 }
-h1 {
-	/* margin-left: 50px; */
-	/* text-align: center; */
-}
+
 #container {
 	border: 1px solid #666;
 	max-height: 1080px;
@@ -273,5 +270,9 @@ body.night-mode {
 	padding: 10px;
 	border-radius: 5px;
 	background: #b5d6d6;
+	cursor: pointer;
+}
+
+body p button {
 	cursor: pointer;
 }
