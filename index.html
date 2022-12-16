@@ -10,46 +10,121 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway&family=Titan+One&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap"
+			rel="stylesheet"
+		/>
 
 		<title>DevTube</title>
 	</head>
 	<body>
-		<button id="button" class="btn">Dark Mode</button>
+		<button id="button" class="btn">
+			<svg width="32" height="32" viewBox="0 0 48 48">
+				<mask id="svgIDa">
+					<g
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-miterlimit="10"
+						stroke-width="4"
+					>
+						<path
+							fill="#fff"
+							stroke="#fff"
+							d="m24.003 4l5.27 5.27h9.457v9.456l5.27 5.27l-5.27 5.278v9.456h-9.456L24.004 44l-5.278-5.27H9.27v-9.456L4 23.997l5.27-5.27V9.27h9.456L24.003 4Z"
+						/>
+						<path
+							fill="#000"
+							stroke="#000"
+							d="M27 17c0 8-5 9-10 9c0 4 6.5 8 12 4s2-13-2-13Z"
+						/>
+					</g>
+				</mask>
+				<path fill="currentColor" d="M0 0h48v48H0z" mask="url(#svgIDa)" />
+			</svg>
+		</button>
 		<div id="bod">
 			<div id="loginContainer">
 				<div id="welcome">
-					<h2 id="">Sign in to DevTube</h2>
+					<h2 id="wel">Sign up for DevTube</h2>
+					<p id="come">It's free and only takes a minute</p>
+
+					<div id="login">
+						<form id="fom">
+							<div class="form-group">
+								<label for="username">Username</label>
+								<input type="text" name="email" id="" placeholder="@example" />
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input
+									type="text"
+									name="email"
+									id=""
+									placeholder="example@devtube.com"
+								/>
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input
+									type="text"
+									name="password"
+									id=""
+									placeholder="********"
+								/>
+							</div>
+							<div class="form-group">
+								<label for="password">Confirm Password</label>
+								<input
+									type="text"
+									name="password"
+									id=""
+									placeholder="********"
+								/>
+							</div>
+
+							<button id="logs" class="btns">Sign Up</button>
+
+							<p class="bottom-text">
+								By clicking the Sign Up button, you agree to our
+								<a href="#">Terms & Conditions</a> and
+								<a href="#">Privacy Policy</a>
+							</p>
+						</form>
+					</div>
 				</div>
-				<div id="login">
-					<form id="fom">
-						<label for="username">Username</label>
-						<input type="text" name="username" id="" placeholder="myusername" />
-						<br />
-						<br />
-						<label for="email">Email Address</label>
-						<input
-							type="email"
-							name=""
-							class="inputs"
-							placeholder="example@devtube.com"
-						/>
-						<br />
-						<br />
-						<label for="password">Password</label>
-						<input
-							type="text"
-							name="password"
-							class="inputs"
-							placeholder="********"
-						/>
+				<div id="signin-redirect">
+					<form id="sign">
+						<div class="form-group">
+							<label for="username">Username</label>
+							<input
+								type="text"
+								name="password"
+								id=""
+								placeholder="@username"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="text" name="password" id="" placeholder="********" />
+						</div>
+
+						<button class="btns">Login</button>
 					</form>
-					<br />
-					<button id="logs">Login</button>
 				</div>
+				<p id="have-account">Already have an account? <button id="remove-signup">Login Here</button></p>
 			</div>
 		</div>
 		<div id="devtube">
-			<h1>DevTube</h1>
+			<h1>
+				<svg width="32" height="32" viewBox="0 0 24 24">
+					<path
+						fill="#888888"
+						d="m24 12l-5.657 5.657l-1.414-1.414L21.172 12l-4.243-4.243l1.414-1.414L24 12zM2.828 12l4.243 4.243l-1.414 1.414L0 12l5.657-5.657L7.07 7.757L2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+					/>
+				</svg>
+				DevTube
+			</h1>
 			<div id="intro">
 				<ul class="menuBar">
 					<li>YouTube</li>

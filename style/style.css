@@ -2,9 +2,12 @@
 
 body {
 	margin: 50px;
+	background: #ceb5b7;
+	/* margin: auto; */
 }
 h1 {
-	text-align: center;
+	/* margin-left: 50px; */
+	/* text-align: center; */
 }
 #container {
 	border: 1px solid #666;
@@ -103,29 +106,27 @@ h1 {
 	padding: 10px 15px;
 	border: none;
 	border-radius: 5px;
-	background-color: #00539cff;
+	background-color: #040f0f;
 	color: white;
 	cursor: pointer;
 	font-size: 0.8em;
 }
 
 #button:hover {
-	background-color: #45a049;
+	background-color: #d2d1d3;
 }
 
 body.night-mode {
 	background-color: #000;
-	color: #fff;
+	color: aliceblue;
 }
 
-/* index.html Styling */
-
 #login {
-	max-width: 300px;
-	border: #666 solid 1px;
-	padding: 20px;
+	max-width: 450px;
+	/* border: #666 solid 1px; */
+	/* padding: 10px; */
 	display: block;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 }
 
 #signin {
@@ -145,7 +146,7 @@ body.night-mode {
 	margin: auto;
 	display: block;
 	max-width: 400px;
-	text-align: center;
+	/* text-align: center; */
 }
 #loginContainer {
 	max-width: 400px;
@@ -158,17 +159,15 @@ body.night-mode {
 
 #welcome {
 	display: block;
-	background: #040f0f;
-	color: aliceblue;
+	/* background: #040f0f; */
+	color: #040f0f;
 	border-radius: 5px;
 	padding: 10px;
 	margin: 10px;
+	/* margin-left: 55px; */
+	border: 1px solid #333;
 	text-align: center;
-}
-
-#logs {
-	text-align: center;
-	width: 50%;
+	font-family: "BioRhyme", serif;
 }
 
 .menuBar {
@@ -212,6 +211,67 @@ body.night-mode {
 }
 
 #devtube h1 {
-	font-family: 'Raleway', sans-serif;
-font-family: 'Titan One', cursive;
+	font-family: "Raleway", sans-serif;
+	font-family: "Titan One", cursive;
+}
+
+#fom {
+	display: block;
+}
+
+.form-group {
+	margin-top: 15px;
+}
+
+.form-group label {
+	display: block;
+	text-align: left;
+}
+
+.form-group input {
+	width: 80%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #666;
+}
+
+.btns {
+	text-align: center;
+	width: 80%;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 8px;
+	margin: 10px;
+	border: 1px solid #666;
+	background: #b5d6d6;
+}
+
+.bottom-text a {
+	text-decoration: none;
+}
+
+#signin-redirect {
+	display: none;
+	/* display: block; */
+	/* background: #040f0f; */
+	color: #040f0f;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	/* margin-left: 55px; */
+	border: 1px solid #333;
+	text-align: center;
+	font-family: "BioRhyme", serif;
+	max-width: 400px;
+}
+
+#have-account {
+	font-family: "BioRhyme", serif;
+}
+
+#remove-signup {
+	padding: 10px;
+	border-radius: 5px;
+	background: #b5d6d6;
+	cursor: pointer;
 }

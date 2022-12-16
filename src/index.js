@@ -21,12 +21,30 @@ function onYouTubePlayerAPIReady() {
 	});
 }
 
-document.getElementById("logs").addEventListener("click", displayDevTube);
-
-function displayDevTube() {
+document.getElementById("fom").addEventListener("submit", displayDevTube);
+document.getElementById("sign").addEventListener("submit", displayDevTube);
+document
+	.getElementById("remove-signup")
+	.addEventListener("click", removeSignup);
+function displayDevTube(e) {
+	e.preventDefault();
 	let login = document.getElementById("bod");
 	let devTube = document.getElementById("devtube");
 
 	login.style.display = "none";
 	devTube.style.display = "contents";
+}
+
+function removeSignup() {
+	let signup = document.getElementById("login");
+	let signin = document.getElementById("signin-redirect");
+	let p = document.getElementById("have-account");
+	let welcomeMessage = document.getElementById("wel");
+	let additionalMessage = document.getElementById("come");
+
+	welcomeMessage.textContent = "Welcome Back to DevTube";
+	p.style.display = "none";
+	additionalMessage.style.display = "none";
+	signup.style.display = "none";
+	signin.style.display = "contents";
 }
