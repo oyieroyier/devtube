@@ -8,12 +8,12 @@ h1 {
 }
 #container {
 	border: 1px solid #666;
-	max-height: 720px;
+	max-height: 1080px;
 	width: 100%;
 }
 #upper_section {
 	border: 1px solid #666;
-	height: 310px;
+	height: 500px;
 	display: flex;
 	justify-content: space-evenly;
 	/* padding: 10px; */
@@ -38,11 +38,12 @@ h1 {
 	justify-content: center;
 	text-align: center;
 }
-#youtube {
+#ytplayer {
 	border: 1px solid #666;
-	height: 300px;
+	height: 480px;
 	margin: 5px;
 	width: 70%;
+	border-radius: 5px;
 
 	/* Temporary Placeholder Details Styling */
 	display: flex;
@@ -51,7 +52,7 @@ h1 {
 }
 #playlist {
 	border: 1px solid #666;
-	height: 300px;
+	height: 480px;
 	margin: 5px;
 	width: 30%;
 
@@ -102,7 +103,7 @@ h1 {
 	padding: 10px 15px;
 	border: none;
 	border-radius: 5px;
-	background-color: #4caf50;
+	background-color: #00539cff;
 	color: white;
 	cursor: pointer;
 	font-size: 0.8em;
@@ -120,9 +121,11 @@ body.night-mode {
 /* index.html Styling */
 
 #login {
-	max-width: 400px;
+	max-width: 300px;
 	border: #666 solid 1px;
 	padding: 20px;
+	display: block;
+	border-radius: 5px;
 }
 
 #signin {
@@ -141,7 +144,74 @@ body.night-mode {
 #bod {
 	margin: auto;
 	display: block;
+	max-width: 400px;
+	text-align: center;
 }
 #loginContainer {
-	width: 400px;
+	max-width: 400px;
+}
+
+#devtube {
+	display: none;
+	/* margin: auto; */
+}
+
+#welcome {
+	display: block;
+	background: #040f0f;
+	color: aliceblue;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+#logs {
+	text-align: center;
+	width: 50%;
+}
+
+.menuBar {
+	border-radius: 25px;
+	height: fit-content;
+	display: inline-flex;
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	align-items: center;
+	padding: 0 10px;
+	margin: 0 0 10px 0;
+	/* margin: auto; */
+}
+
+.menuBar li {
+	list-style: none;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 12px 16px;
+	margin: 0 8px;
+	position: relative;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.menuBar li:hover {
+	background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+	box-shadow: 0px 3px 20px 0px black;
+	transform: scale(1.5);
+	color: #00539cff;
+	/* top: 0;
+	left: 0; */
+	border-radius: 25px;
+}
+
+#intro {
+	display: flex;
+	justify-content: center;
+}
+
+#devtube h1 {
+	font-family: 'Raleway', sans-serif;
+font-family: 'Titan One', cursive;
 }

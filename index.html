@@ -4,39 +4,81 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/style/style.css" />
-		<style>
-			body{
-				margin: auto;
-			}
-		</style>
-		<title>Sign in to DevTube</title>
+		<script src="./src/index.js" defer></script>
+		<link rel="stylesheet" href="./style/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway&family=Titan+One&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>DevTube</title>
 	</head>
-	<body id="bod">
+	<body>
 		<button id="button" class="btn">Dark Mode</button>
-		<div id="loginContainer">
-			Welcome to DevTube
-			<div id="login">
-				<form>
-					<label for="email">Email Address</label>
-					<input
-						type="email"
-						name=""
-						class="inputs"
-						placeholder="example@devtube.com"
-					/>
+		<div id="bod">
+			<div id="loginContainer">
+				<div id="welcome">
+					<h2 id="">Sign in to DevTube</h2>
+				</div>
+				<div id="login">
+					<form id="fom">
+						<label for="username">Username</label>
+						<input type="text" name="username" id="" placeholder="myusername" />
+						<br />
+						<br />
+						<label for="email">Email Address</label>
+						<input
+							type="email"
+							name=""
+							class="inputs"
+							placeholder="example@devtube.com"
+						/>
+						<br />
+						<br />
+						<label for="password">Password</label>
+						<input
+							type="text"
+							name="password"
+							class="inputs"
+							placeholder="********"
+						/>
+					</form>
 					<br />
-					<label for="password">Password</label>
-					<input
-						type="text"
-						name="password"
-						class="inputs"
-						placeholder="********"
-					/>
-				</form>
-				<a href="./devtube.html" id="signin">Log in</a>
+					<button id="logs">Login</button>
+				</div>
 			</div>
 		</div>
-		<script src="./src/index.js"></script>
+		<div id="devtube">
+			<h1>DevTube</h1>
+			<div id="intro">
+				<ul class="menuBar">
+					<li>YouTube</li>
+					<li>Vimeo</li>
+				</ul>
+			</div>
+			<div id="container">
+				<div id="upper_section">
+					<div id="ytplayer">
+						<h3>YouTube Video Section</h3>
+					</div>
+					<div id="playlist">
+						<h3>YouTube Playlist Section</h3>
+					</div>
+				</div>
+				<div id="lower_section">
+					<div id="compiler">
+						<h3>Compiler Section</h3>
+					</div>
+					<div id="pomodoro">
+						<div id="timerCounter">
+							<h3>Timer Counter</h3>
+						</div>
+						<div id="sessions">
+							<h3>Number of Sessions</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
