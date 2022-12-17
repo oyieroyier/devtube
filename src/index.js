@@ -71,28 +71,23 @@ function renderResult(data) {
 	data.items.forEach((element) => {
 		let listed = document.createElement("li");
 		let vids = document.createElement("a");
-		let thumbnail = document.createElement("img");
+		let thumbnail = document.createElement("img")
 
-		thumbnail.src = element.snippet.thumbnails.default.url;
-		thumbnail.style.borderRadius = "10px";
-		thumbnail.style.margin = "5px";
+		thumbnail.src = element.snippet.thumbnails.default.url
+		thumbnail.style.borderRadius = "10px"
+		thumbnail.style.margin = "5px"
 		vids.href = "#";
 		vids.textContent = element.snippet.title;
-		vids.onclick = openLinkInDiv();
+		vids.onclick = () => {
+			let videoId = element.id.videoId
+			let renderingDiv = document.getElementById("ytplayer")
+
+			renderingDiv.innerHTML = '<iframe src="https://www.youtube.com/embed/' + videoId + '" width="100%" height="100%"></iframe>'
+		}
 
 		list.appendChild(listed);
 		listed.appendChild(vids);
-		vids.appendChild(thumbnail);
+		vids.appendChild(thumbnail)
 
-		function openLinkInDiv() {
-			let videoId = element.id.videoId;
-			let renderingDiv = document.getElementById("ytplayer");
-
-			renderingDiv.innerHTML =
-				'<iframe src="https://www.youtube.com/embed/' +
-				videoId +
-				'" width="100%" height="100%"></iframe>';
-			// `https://www.youtube.com/watch?v=${}`
-		}
 	});
 }
