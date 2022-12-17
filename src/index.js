@@ -67,6 +67,7 @@ function fetchSearch(search) {
 
 function renderResult(data) {
 	let list = document.getElementById("res");
+	list.textContent = ""
 
 	data.items.forEach((element) => {
 		let listed = document.createElement("li");
@@ -88,6 +89,5 @@ function renderResult(data) {
 		list.appendChild(listed);
 		listed.appendChild(vids);
 		vids.appendChild(thumbnail)
-
 	});
 }
