@@ -56,11 +56,13 @@ body {
 	margin: 5px;
 	width: 30%;
 	overflow-y:scroll;
+	/* background: #888888; */
+
 
 	/* Temporary Placeholder Details Styling */
-	display: flex;
-	justify-content: center;
-	text-align: center;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* text-align: center; */
 }
 #pomodoro {
 	border: 1px solid #666;
@@ -314,10 +316,43 @@ margin: 0 5px 0 0;
 #res li a{
 	display: flex;
 	box-shadow: 0px 0px 15px #666;
+	/* border: 1px #666 solid; */
 	margin: 5px;
 	text-decoration: none;
+	color: #ffffff91;
+	border-radius: 5px;
+	padding: 5px;
+	height: 60px;
+	/* white-space: nowrap; */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 500px;
+	text-align: center;
+}
+
+#res li a:hover {
+	color: #fff;
 }
 
 #res li {
 	list-style: none;
+	/* background: #fff; */
+	margin: 0 15px 0 0;
+	border-radius: 10px;
+	/* padding: 5px; */
+}
+
+#playlist::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+#playlist::-webkit-scrollbar-track {
+  background: #B5D6D6;
+  border-radius: 20px;       /* color of the tracking area */
+}
+
+#playlist::-webkit-scrollbar-thumb {
+  background-color: #666;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* border: 3px solid orange;  creates padding around scroll thumb */
 }

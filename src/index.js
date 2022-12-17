@@ -20,7 +20,7 @@ function displayDevTube(e) {
 	let p = document.createElement("p");
 
 	p.innerHTML = `
-	<p>You are being redirected to DevTube in 5 seconds...</p>
+	<p>You are being redirected to DevTube within 5 seconds...</p>
 	<p>If not redirected, click <button> here </button> </p>
 	`;
 	p.style.fontSize = "20px";
@@ -74,6 +74,8 @@ function renderResult(data) {
 		let thumbnail = document.createElement("img");
 
 		thumbnail.src = element.snippet.thumbnails.default.url;
+		thumbnail.style.borderRadius = "10px";
+		thumbnail.style.margin = "5px";
 		vids.href = `https://www.youtube.com/watch?v=${element.id.videoId}`;
 		vids.textContent = element.snippet.title;
 
