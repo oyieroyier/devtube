@@ -76,11 +76,23 @@ function renderResult(data) {
 		thumbnail.src = element.snippet.thumbnails.default.url;
 		thumbnail.style.borderRadius = "10px";
 		thumbnail.style.margin = "5px";
-		vids.href = `https://www.youtube.com/watch?v=${element.id.videoId}`;
+		vids.href = "#";
 		vids.textContent = element.snippet.title;
+		vids.onclick = openLinkInDiv();
 
 		list.appendChild(listed);
 		listed.appendChild(vids);
 		vids.appendChild(thumbnail);
+
+		function openLinkInDiv() {
+			let videoId = element.id.videoId;
+			let renderingDiv = document.getElementById("ytplayer");
+
+			renderingDiv.innerHTML =
+				'<iframe src="https://www.youtube.com/embed/' +
+				videoId +
+				'" width="100%" height="100%"></iframe>';
+			// `https://www.youtube.com/watch?v=${}`
+		}
 	});
 }
