@@ -40,6 +40,6 @@ Project contributed to by:
 
 - [Bob Oyier](https://github.com/oyieroyier)
 
-### ISC License (ISC)
+###  GNU AFFERO GENERAL PUBLIC LICENSE Version 3
 
-[![License: ICL](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: ICL](https://img.shields.io/badge/License-GNU%20Affero%20General%20Public%20License%20version%203-blue)](https://opensource.org/licenses/AGPL-3.0)
