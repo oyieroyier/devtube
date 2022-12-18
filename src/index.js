@@ -100,7 +100,7 @@ search();
 function fetchSearch(search) {
 	let apiKey = "AIzaSyAxliesP43YasDnhL_YGvvwAwlHMTtkaQY";
 	fetch(
-		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=10&q=${search}`
+		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=5&q=${search}`
 	)
 		.then((response) => response.json())
 		// .then(data => console.log(data))
