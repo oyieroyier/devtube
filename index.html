@@ -14,6 +14,14 @@
 			href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Gochi+Hand&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap"
+			rel="stylesheet"
+		/>
 
 		<title>DevTube</title>
 	</head>
@@ -126,7 +134,7 @@
 		</div>
 		<div id="devtube">
 			<h1>
-				<svg width="32" height="32" viewBox="0 0 24 24">
+				<svg width="50" height="50" viewBox="0 0 24 24">
 					<path
 						fill="#888888"
 						d="m24 12l-5.657 5.657l-1.414-1.414L21.172 12l-4.243-4.243l1.414-1.414L24 12zM2.828 12l4.243 4.243l-1.414 1.414L0 12l5.657-5.657L7.07 7.757L2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
@@ -143,31 +151,67 @@
 			<div id="container">
 				<div id="upper_section">
 					<div id="ytplayer">
-						<!-- <h3>YouTube Video Section</h3> -->
+						<div id="holder">
+							<h3 class="we">Welcome to</h3>
+							<!-- <h3>to</h3> -->
+							<h3 class="de">DevTube</h3>
+							<h4>It's YouTube, but for Developers.</h4>
+						</div>
 					</div>
 					<div id="playlist">
-						<form id="fomu">
-							<label for="search">
-								<svg width="32" height="32" viewBox="0 0 1200 1200">
-<path fill="#888888" d="M600 0C268.629 0 0 268.629 0 600s268.629 600 600 600s600-268.629 600-600S931.371 0 600 0zm41.162 260.01c160.533 0 290.625 130.166 290.625 290.698c0 160.533-130.092 290.625-290.625 290.625c-48.581 0-94.368-11.885-134.619-32.959c.041.186.106.401.146.586L375.586 939.99L268.213 832.544l126.416-126.489c.209-.094.45-.129.659-.22c-28.387-44.893-44.824-98.088-44.824-155.127c0-160.533 130.165-290.698 290.698-290.698zm0 129.126c-89.213 0-161.572 72.359-161.572 161.572s72.359 161.499 161.572 161.499c89.214 0 161.499-72.286 161.499-161.499s-72.285-161.572-161.499-161.572z"/>
-</svg>
-</label>
-							<input type="search" name="search" id="search" placeholder="Search"/>
+						<form id="fomu" class="search-bar">
+							<input
+								type="search"
+								name="search"
+								id="search"
+								placeholder="Search"
+								pattern=".*\S.*"
+								required
+							/>
+							<button class="search-btn" type="submit">
+								<span
+									><svg width="32" height="32" viewBox="0 0 1200 1200">
+										<path
+											fill="#888888"
+											d="M600 0C268.629 0 0 268.629 0 600s268.629 600 600 600s600-268.629 600-600S931.371 0 600 0zm41.162 260.01c160.533 0 290.625 130.166 290.625 290.698c0 160.533-130.092 290.625-290.625 290.625c-48.581 0-94.368-11.885-134.619-32.959c.041.186.106.401.146.586L375.586 939.99L268.213 832.544l126.416-126.489c.209-.094.45-.129.659-.22c-28.387-44.893-44.824-98.088-44.824-155.127c0-160.533 130.165-290.698 290.698-290.698zm0 129.126c-89.213 0-161.572 72.359-161.572 161.572s72.359 161.499 161.572 161.499c89.214 0 161.499-72.286 161.499-161.499s-72.285-161.572-161.499-161.572z"
+										/></svg
+								></span>
+							</button>
 						</form>
-						<div id="resultz">
-							<ul id="res">
+						<div id="about">
+							<p>
+								Quickly start coding along with your favorite YouTube tutorial
+								without overloading your computer's memory running parallel
+								browser and IDE applications.
+								<br />
+								<br />
 
-							</ul>
+								Simply search for your favorite YouTube tutorial in the search
+								bar, play it and start coding; all inside of DevTube!
+								<br />
+								<br />
+
+								READY. SET. CODE! <br />
+								<br />
+
+								(Coming soon: Support for Vimeo)
+							</p>
+						</div>
+						<div id="resultz">
+							<ul id="res"></ul>
 						</div>
 					</div>
 				</div>
 				<div id="lower_section">
 					<!-- <div id="compiler"> -->
-						<!-- <h3>Compiler Section</h3> -->
-						<div class="sec-widget" data-widget="6272b9416257d6fc04cf6baada091b59"></div>
-					</div>
+					<!-- <h3>Compiler Section</h3> -->
+					<div
+						class="sec-widget"
+						data-widget="6272b9416257d6fc04cf6baada091b59"
+					></div>
 				</div>
 			</div>
 		</div>
+		<!-- </div> -->
 	</body>
 </html>

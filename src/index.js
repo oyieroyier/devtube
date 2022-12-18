@@ -49,6 +49,7 @@ function displayDevTube(e) {
 	<p>If not redirected, click <button> here </button> </p>
 	`;
 	p.style.fontSize = "20px";
+	p.style.color = "aliceblue";
 	body.appendChild(p);
 
 	setTimeout(() => {
@@ -77,7 +78,6 @@ function removeSignup() {
 	signin.style.display = "contents";
 }
 
-
 /*
 	This function targets the input entered by a DevTube user in the
 	search bar.
@@ -89,6 +89,8 @@ function search() {
 	document.getElementById("fomu").addEventListener("submit", (e) => {
 		e.preventDefault();
 		let search = e.target.search.value;
+		let para = document.getElementById("about");
+		para.remove();
 		fetchSearch(search);
 	});
 }
@@ -127,6 +129,7 @@ function renderResult(data) {
 				'<iframe src="https://www.youtube.com/embed/' +
 				videoId +
 				'" width="100%" height="100%"></iframe>';
+			getConsole();
 		};
 
 		list.appendChild(listed);
@@ -135,7 +138,9 @@ function renderResult(data) {
 	});
 }
 
-// Embeds the Online IDE by Sphere Engine on the page.
+/*
+	Embeds the Online IDE by Sphere Engine on the page. Only triggered once the user selects their chosen video from the search results.
+*/
 function getConsole() {
 	SEC_HTTPS = true;
 	SEC_BASE = "compilers.widgets.sphere-engine.com";
@@ -151,4 +156,4 @@ function getConsole() {
 		fjs.parentNode.insertBefore(js, fjs);
 	})(document, "script", "sphere-engine-compilers-jssdk");
 }
-getConsole();
+// getConsole();

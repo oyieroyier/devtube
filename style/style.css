@@ -2,7 +2,7 @@
 
 body {
 	margin: 50px;
-	background: #ceb5b7;
+	background: #141e30;
 	/* margin: auto; */
 }
 
@@ -39,7 +39,7 @@ body {
 	text-align: center;
 }
 #ytplayer {
-	border: 1px solid #666;
+	/* border: 1px solid #666; */
 	height: 480px;
 	margin: 5px;
 	width: 70%;
@@ -68,12 +68,12 @@ body {
 	/* justify-content: center; */
 	/* text-align: center; */
 }
-#pomodoro {
+/* #pomodoro {
 	border: 1px solid #666;
 	height: 250px;
 	margin: 5px;
 	width: 30%;
-}
+} */
 
 #timerCounter {
 	height: 150px;
@@ -154,6 +154,7 @@ body.night-mode {
 }
 #loginContainer {
 	max-width: 400px;
+	color: aliceblue;
 }
 
 #devtube {
@@ -219,6 +220,14 @@ body.night-mode {
 	font-family: "Raleway", sans-serif;
 	text-decoration: none;
 	color: #666;
+
+	/* Experimental */
+	font-size: 70px;
+	font-weight: 600;
+	background-image: linear-gradient(to left, #553c9a, #b393d3);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
 }
 
 #fom {
@@ -264,7 +273,7 @@ body.night-mode {
 	display: none;
 	/* display: block; */
 	/* background: #040f0f; */
-	color: #040f0f;
+	color: aliceblue;
 	border-radius: 5px;
 	padding: 10px;
 	margin: 10px;
@@ -311,7 +320,7 @@ body p button {
 	border: 1px solid #666;
 	width: 100%;
 	max-height: 30px;
-	background: #ceb5b7;
+	background: #a8c9c9;
 	font-family: "BioRhyme", serif;
 	text-align: center;
 	/* padding: 8px; */
@@ -365,4 +374,42 @@ body p button {
 	background-color: #666; /* color of the scroll thumb */
 	border-radius: 20px; /* roundness of the scroll thumb */
 	/* border: 3px solid orange;  creates padding around scroll thumb */
+}
+
+.search-btn {
+	margin-left: 5px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+/* Kujaribu vitu sasa */
+
+#holder .we {
+	margin-top: 50px;
+	font-family: "Gochi Hand", cursive;
+	color: #a8c9c9;
+	/* padding: 10px; */
+	font-size: 30px;
+}
+
+#holder .de {
+	font-family: "Gochi Hand", cursive;
+	color: #a8c9c9;
+	font-size: 100px;
+	margin: 0;
+}
+
+#about {
+	color: #a8c9c9;
+	font-family: 'Noto Sans Mono', monospace;
+	font-size: 17px;
+	padding: 15px;
+	
+}
+
+#holder h4 {
+	font-family: "Cutive Mono", monospace;
+	color: #a8c9c9;
+	font-size: 30px;
 }
