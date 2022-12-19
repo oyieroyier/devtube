@@ -1,0 +1,25 @@
+{
+  "name": "devtube",
+  "version": "1.0.0",
+  "description": "DevTube is a minimalist website made for Developers that that allows users to watch YouTube tutorials and code within the site using the embedded Compiler.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oyieroyier/devtube.git"
+  },
+  "keywords": [
+    "API",
+    "Compiler",
+    "YouTube",
+    "API"
+  ],
+  "author": "Bob Oyier",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/oyieroyier/devtube/issues"
+  },
+  "homepage": "https://github.com/oyieroyier/devtube#readme"
+}
