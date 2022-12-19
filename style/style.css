@@ -182,6 +182,7 @@ body.night-mode {
 #intro {
 	display: flex;
 	justify-content: center;
+	margin-top: 40px;
 }
 
 #devtube h1 a {
