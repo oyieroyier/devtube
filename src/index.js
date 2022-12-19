@@ -103,7 +103,6 @@ function fetchSearch(search) {
 		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=5&q=${search}`
 	)
 		.then((response) => response.json())
-		// .then(data => console.log(data))
 		.then(renderResult);
 }
 
@@ -156,4 +155,3 @@ function getConsole() {
 		fjs.parentNode.insertBefore(js, fjs);
 	})(document, "script", "sphere-engine-compilers-jssdk");
 }
-// getConsole();

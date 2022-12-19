@@ -45,7 +45,7 @@ I recommend users clicking on the *clear output on each new submission* option a
 
 - Clone the repository using the following command:
 
-        git clone https://github.com/your-username-here/devtube.git
+        git clone https://github.com/oyieroyier/devtube.git
 
 - Change directory to the repository folder:
 

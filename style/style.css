@@ -3,29 +3,22 @@
 body {
 	margin: 50px;
 	background: #141e30;
-	/* margin: auto; */
 }
 
 #container {
-	/* border: 1px solid #666; */
 	max-height: 1080px;
 	width: 100%;
 }
 #upper_section {
-	/* border: 1px solid #666; */
 	height: 500px;
 	display: flex;
 	justify-content: space-evenly;
-	/* padding: 10px; */
-	/* margin: 20px; */
 }
 #lower_section {
 	display: flex;
 	justify-content: space-evenly;
-	/* border: 1px solid #666; */
 	height: 277px;
 	padding: 10px;
-	/* margin: 20px; */
 }
 #compiler {
 	border: 1px solid #666;
@@ -39,7 +32,6 @@ body {
 	text-align: center;
 }
 #ytplayer {
-	/* border: 1px solid #666; */
 	height: 480px;
 	margin: 5px;
 	width: 70%;
@@ -56,24 +48,11 @@ body {
 	border-radius: 10px;
 }
 #playlist {
-	/* border: 1px solid #666; */
 	height: 480px;
 	margin: 5px;
 	width: 30%;
 	overflow-y: scroll;
-	/* background: #888888; */
-
-	/* Temporary Placeholder Details Styling */
-	/* display: flex; */
-	/* justify-content: center; */
-	/* text-align: center; */
 }
-/* #pomodoro {
-	border: 1px solid #666;
-	height: 250px;
-	margin: 5px;
-	width: 30%;
-} */
 
 #timerCounter {
 	height: 150px;
@@ -127,10 +106,7 @@ body.night-mode {
 
 #login {
 	max-width: 450px;
-	/* border: #666 solid 1px; */
-	/* padding: 10px; */
 	display: block;
-	/* border-radius: 5px; */
 }
 
 #signin {
@@ -150,7 +126,6 @@ body.night-mode {
 	margin: auto;
 	display: block;
 	max-width: 400px;
-	/* text-align: center; */
 }
 #loginContainer {
 	max-width: 400px;
@@ -159,17 +134,13 @@ body.night-mode {
 
 #devtube {
 	display: none;
-	/* margin: auto; */
 }
 
 #welcome {
 	display: block;
-	/* background: #040f0f; */
-	/* color: #040f0f; */
 	border-radius: 5px;
 	padding: 10px;
 	margin: 10px;
-	/* margin-top: 105px; */
 	box-shadow: 0px 0px 15px #666;
 	text-align: center;
 	font-family: "BioRhyme", serif;
@@ -186,7 +157,6 @@ body.night-mode {
 	align-items: center;
 	padding: 0 10px;
 	margin: 0 0 20px 0;
-	/* margin: auto; */
 }
 
 .menuBar li {
@@ -206,8 +176,6 @@ body.night-mode {
 	box-shadow: 0px 3px 20px 0px black;
 	transform: scale(1.5);
 	color: #00539cff;
-	/* top: 0;
-	left: 0; */
 	border-radius: 25px;
 }
 
@@ -238,16 +206,27 @@ body.night-mode {
 	margin-top: 15px;
 }
 
-.form-group label {
-	display: block;
-	text-align: left;
+.form-group i{
+color: #333;
 }
 
-.form-group input {
-	width: 80%;
+.form-group{
+	margin: 15px 60px;
+	background: #919191;
+	width: 60%;
 	padding: 10px;
 	border-radius: 10px;
 	border: 1px solid #666;
+}
+.form-group input{
+	padding: 10px;
+	background: transparent;
+	border: none;
+	width: 80%;
+}
+
+.form-group input::placeholder{
+	color: #000;
 }
 
 .btns {
@@ -271,13 +250,10 @@ body.night-mode {
 
 #signin-redirect {
 	display: none;
-	/* display: block; */
-	/* background: #040f0f; */
 	color: aliceblue;
 	border-radius: 5px;
 	padding: 10px;
 	margin: 10px;
-	/* margin-left: 55px; */
 	border: 1px solid #333;
 	text-align: center;
 	font-family: "BioRhyme", serif;
@@ -309,13 +285,11 @@ body p button {
 }
 
 #fomu label {
-	/* display: block; */
 	margin: 0 5px 0 0;
 }
 
 #search {
 	margin: 0, 20px, 0, 20px;
-	/* display: block; */
 	border-radius: 15px;
 	border: 1px solid #666;
 	width: 100%;
@@ -323,7 +297,6 @@ body p button {
 	background: #a8c9c9;
 	font-family: "BioRhyme", serif;
 	text-align: center;
-	/* padding: 8px; */
 }
 
 #search:hover {
@@ -331,20 +304,16 @@ body p button {
 }
 #res li a {
 	display: flex;
-	/* box-shadow: 0px 0px 15px #666; */
 	border-bottom: 1px #666 solid;
 	margin: 5px 0 10px 0;
 	text-decoration: none;
 	color: #ffffff91;
-	/* border-radius: 5px; */
 	padding: 0 0 6px 0;
 	height: 60px;
 	font-size: 20px;
-	/* white-space:pre-wrap; */
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 500px;
-	/* text-align: center; */
 }
 
 #res li a:hover {
@@ -353,15 +322,12 @@ body p button {
 
 #res li {
 	list-style: none;
-	/* background: #fff; */
 	margin: 0 15px 0 0;
 	border-radius: 10px;
-	/* padding: 5px; */
 }
 
 #playlist::-webkit-scrollbar {
 	width: 5px; /* width of the entire scrollbar */
-	/* display: none; */
 }
 
 #playlist::-webkit-scrollbar-track {
@@ -373,7 +339,6 @@ body p button {
 #playlist::-webkit-scrollbar-thumb {
 	background-color: #666; /* color of the scroll thumb */
 	border-radius: 20px; /* roundness of the scroll thumb */
-	/* border: 3px solid orange;  creates padding around scroll thumb */
 }
 
 .search-btn {
@@ -389,7 +354,6 @@ body p button {
 	margin-top: 50px;
 	font-family: "Gochi Hand", cursive;
 	color: #a8c9c9;
-	/* padding: 10px; */
 	font-size: 30px;
 }
 
@@ -405,6 +369,7 @@ body p button {
 	font-family: 'Noto Sans Mono', monospace;
 	font-size: 17px;
 	padding: 15px;
+	box-shadow: 0px 0px 15px #666;
 	
 }
 
