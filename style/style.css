@@ -17,7 +17,7 @@ body {
 #lower_section {
 	display: flex;
 	justify-content: space-evenly;
-	height: 277px;
+	height: 500px;
 	padding: 10px;
 }
 #compiler {
@@ -156,7 +156,7 @@ body.night-mode {
 	backdrop-filter: blur(10px);
 	align-items: center;
 	padding: 0 10px;
-	margin: 0 0 20px 0;
+	margin: 0 0 0px 200px;
 }
 
 .menuBar li {
@@ -377,4 +377,8 @@ body p button {
 	font-family: "Cutive Mono", monospace;
 	color: #a8c9c9;
 	font-size: 30px;
+}
+
+#ebuTuone {
+	display: flex;
 }
