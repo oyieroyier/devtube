@@ -15,7 +15,7 @@ body {
 	justify-content: space-evenly;
 }
 #lower_section {
-	display: none;
+	/* display: none; */
 	/* justify-content: space-evenly; */
 	height: 500px;
 	/* padding: 10px; */
