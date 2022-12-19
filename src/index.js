@@ -142,7 +142,9 @@ function renderResult(data) {
 	Embeds the Online IDE by Sphere Engine on the page. Only triggered once the user selects their chosen video from the search results.
 */
 function getConsole() {
-		
+	let div = document.getElementById("lower_section");
+	div.style.display = "block";
+
 	SEC_HTTPS = true;
 	SEC_BASE = "compilers.widgets.sphere-engine.com";
 	(function (d, s, id) {

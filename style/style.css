@@ -15,7 +15,7 @@ body {
 	justify-content: space-evenly;
 }
 #lower_section {
-	/* display: none; */
+	display: none;
 	/* justify-content: space-evenly; */
 	height: 500px;
 	/* padding: 10px; */
@@ -371,4 +371,20 @@ body p button {
 
 #ebuTuone {
 	display: flex;
+}
+
+
+body::-webkit-scrollbar {
+	width: 5px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+	background: #b5d6d6;
+	border-radius: 20px; /* color of the tracking area */
+	display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #666; /* color of the scroll thumb */
+	border-radius: 20px; /* roundness of the scroll thumb */
 }
