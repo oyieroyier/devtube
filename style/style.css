@@ -15,21 +15,10 @@ body {
 	justify-content: space-evenly;
 }
 #lower_section {
-	display: flex;
-	justify-content: space-evenly;
+	display: none;
+	/* justify-content: space-evenly; */
 	height: 500px;
-	padding: 10px;
-}
-#compiler {
-	border: 1px solid #666;
-	height: 250px;
-	margin: 5px;
-	width: 60%;
-
-	/* Temporary Placeholder Details Styling */
-	display: flex;
-	justify-content: center;
-	text-align: center;
+	/* padding: 10px; */
 }
 #ytplayer {
 	height: 480px;

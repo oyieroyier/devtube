@@ -91,6 +91,7 @@ function search() {
 		let search = e.target.search.value;
 		let para = document.getElementById("about");
 		para.remove();
+
 		fetchSearch(search);
 	});
 }
@@ -100,7 +101,7 @@ search();
 function fetchSearch(search) {
 	let apiKey = "AIzaSyAxliesP43YasDnhL_YGvvwAwlHMTtkaQY";
 	fetch(
-		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=1&q=${search}`
+		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=5&q=${search}`
 	)
 		.then((response) => response.json())
 		.then(renderResult);
@@ -141,6 +142,7 @@ function renderResult(data) {
 	Embeds the Online IDE by Sphere Engine on the page. Only triggered once the user selects their chosen video from the search results.
 */
 function getConsole() {
+		
 	SEC_HTTPS = true;
 	SEC_BASE = "compilers.widgets.sphere-engine.com";
 	(function (d, s, id) {
