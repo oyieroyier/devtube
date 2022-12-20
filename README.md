@@ -81,7 +81,7 @@ I recommend users clicking on the *clear output on each new submission* option a
 
 Project contributed to by:
 
-- [Bob Oyier](https://github.com/oyieroyier) <br>
+[Bob Oyier](https://github.com/oyieroyier) <br>
 	Email me at: boboyier92@gmail.com <br>
 	WhatsApp or Call: +254-722-2709-69 <br>
 
