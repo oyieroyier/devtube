@@ -140,6 +140,8 @@ function renderResult(data) {
 
 /*
 	Embeds the Online IDE by Sphere Engine on the page. Only triggered once the user selects their chosen video from the search results.
+	The code inside this function is provided by the API client.
+	DO NOT TOUCH IT.
 */
 function getConsole() {
 	let div = document.getElementById("lower_section");
