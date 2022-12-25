@@ -78,6 +78,18 @@ function removeSignup() {
 	signin.style.display = "contents";
 }
 
+function getStarted() {
+	let getStartedBtn = document.getElementById("get-started");
+	getStartedBtn.addEventListener("click", () => {
+		let search = document.getElementById("fomu");
+		search.style.display = "flex";
+		getStartedBtn.style.display = "none";
+	});
+	search();
+}
+
+getStarted();
+
 /*
 	This function targets the input entered by a DevTube user in the
 	search bar.
@@ -95,7 +107,6 @@ function search() {
 		fetchSearch(search);
 	});
 }
-search();
 
 // Calls the YouTube API using my API Key and the search query.
 function fetchSearch(search) {
@@ -159,14 +170,3 @@ function getConsole() {
 		fjs.parentNode.insertBefore(js, fjs);
 	})(document, "script", "sphere-engine-compilers-jssdk");
 }
-
-function getStarted() {
-	let getStartedBtn = document.getElementById("get-started")
-	getStartedBtn.addEventListener("click", () => {
-		let search = document.getElementById("fomu")
-		search.style.display = "flex"
-		getStartedBtn.style.display = "none"
-	})
-}
-
-getStarted()

@@ -296,7 +296,7 @@ body p button {
 }
 
 #res {
-	padding-left: 0;
+	padding: 0 15px;
 }
 #res li a {
 	display: flex;
@@ -376,25 +376,26 @@ body p button {
 
 #get-started {
 	margin-top: 30px;
-	border: 2px solid #a8c9c9;
+	margin-right: 40px;
+	
 	border-radius: 60px;
 	padding: 20px;
 	float: right;
-	font-size: 50px;
+	font-size: 40px;
 	letter-spacing: 2px;
 	cursor: pointer;
-	background:#a8c9c9;
-	color: linear-gradient(to left, #b393d3, #553c9a);
-}
-
-#get-started:hover {
-	
-
 	background-image: linear-gradient(to left, #b393d3, #553c9a);
 	color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
-	transform: scale(1.25);
+	
+}
+
+#get-started:hover {
+	/* background: #a8c9c9; */
+	/* color: linear-gradient(to left, #b393d3, #553c9a); */
+	transform: scale(1.12);
+	border: 2px solid #a8c9c9;
 }
 #ebuTuone {
 	display: flex;
