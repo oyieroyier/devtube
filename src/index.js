@@ -159,3 +159,14 @@ function getConsole() {
 		fjs.parentNode.insertBefore(js, fjs);
 	})(document, "script", "sphere-engine-compilers-jssdk");
 }
+
+function getStarted() {
+	let getStartedBtn = document.getElementById("get-started")
+	getStartedBtn.addEventListener("click", () => {
+		let search = document.getElementById("fomu")
+		search.style.display = "flex"
+		getStartedBtn.style.display = "none"
+	})
+}
+
+getStarted()
