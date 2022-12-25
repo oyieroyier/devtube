@@ -36,6 +36,7 @@ body {
 	border: none;
 	border-radius: 10px;
 }
+
 #playlist {
 	height: 480px;
 	margin: 5px;
@@ -196,25 +197,25 @@ body.night-mode {
 	margin-top: 15px;
 }
 
-.form-group i{
-color: #333;
+.form-group i {
+	color: #333;
 }
 
-.form-group{
+.form-group {
 	margin: 15px 40px;
 	background: #919191;
 	padding: 10px;
 	border-radius: 10px;
 	border: 1px solid #666;
 }
-.form-group input{
+.form-group input {
 	padding: 10px;
 	background: transparent;
 	border: none;
 	width: 80%;
 }
 
-.form-group input::placeholder{
+.form-group input::placeholder {
 	color: #000;
 }
 
@@ -271,7 +272,8 @@ body p button {
 
 #fomu {
 	margin: 20px;
-	display: flex;
+	/* display: flex; */
+	display: none;
 }
 
 #fomu label {
@@ -291,6 +293,10 @@ body p button {
 
 #search:hover {
 	background: #fff;
+}
+
+#res {
+	padding-left: 0;
 }
 #res li a {
 	display: flex;
@@ -356,11 +362,10 @@ body p button {
 
 #about {
 	color: #a8c9c9;
-	font-family: 'Noto Sans Mono', monospace;
+	font-family: "Noto Sans Mono", monospace;
 	font-size: 17px;
 	padding: 15px;
-	box-shadow: 0px 0px 15px #666;
-	
+	/* box-shadow: 0px 0px 15px #666; */
 }
 
 #holder h4 {
@@ -369,10 +374,31 @@ body p button {
 	font-size: 30px;
 }
 
+#get-started {
+	margin-top: 30px;
+	border: 2px solid #a8c9c9;
+	border-radius: 60px;
+	padding: 20px;
+	float: right;
+	font-size: 50px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	background:#a8c9c9;
+	color: linear-gradient(to left, #b393d3, #553c9a);
+}
+
+#get-started:hover {
+	
+
+	background-image: linear-gradient(to left, #b393d3, #553c9a);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	transform: scale(1.25);
+}
 #ebuTuone {
 	display: flex;
 }
-
 
 body::-webkit-scrollbar {
 	width: 5px; /* width of the entire scrollbar */
