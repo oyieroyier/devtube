@@ -82,8 +82,8 @@ function getStarted() {
 	let getStartedBtn = document.getElementById("get-started");
 	getStartedBtn.addEventListener("click", () => {
 		let search = document.getElementById("fomu");
-		search.style.display = "flex";
 		getStartedBtn.style.display = "none";
+		search.style.display = "flex";
 	});
 	search();
 }
@@ -110,7 +110,7 @@ function search() {
 
 // Calls the YouTube API using my API Key and the search query.
 function fetchSearch(search) {
-	let apiKey = "AIzaSyAxliesP43YasDnhL_YGvvwAwlHMTtkaQY";
+	let apiKey = "AIzaSyAeEknscJNtuNE1OHys1LJ8lgiLDoMuURQ"; 
 	fetch(
 		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=5&q=${search}`
 	)
@@ -151,6 +151,8 @@ function renderResult(data) {
 
 /*
 	Embeds the Online IDE by Sphere Engine on the page. Only triggered once the user selects their chosen video from the search results.
+	The code inside this function is provided by the API client.
+	DO NOT TOUCH IT.
 */
 function getConsole() {
 	let div = document.getElementById("lower_section");
