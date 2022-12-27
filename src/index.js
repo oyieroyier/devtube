@@ -102,7 +102,7 @@ function search() {
 		e.preventDefault();
 		let search = e.target.search.value;
 		let para = document.getElementById("about");
-		para.remove();
+		para.style.display = "none";
 
 		fetchSearch(search);
 	});
@@ -121,6 +121,8 @@ function fetchSearch(search) {
 function renderResult(data) {
 	let list = document.getElementById("res");
 	list.textContent = "";
+
+	list.replaceChildren()
 
 	data.items.forEach((element) => {
 		let listed = document.createElement("li");
