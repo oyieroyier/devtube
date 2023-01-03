@@ -112,7 +112,7 @@ function search() {
 function fetchSearch(search) {
 	let apiKey = "AIzaSyAeEknscJNtuNE1OHys1LJ8lgiLDoMuURQ";
 	fetch(
-		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=1&q=${search}`
+		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=5&q=${search}`
 	)
 		.then((response) => response.json())
 		.then(renderResult);
