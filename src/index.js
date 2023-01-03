@@ -110,9 +110,9 @@ function search() {
 
 // Calls the YouTube API using my API Key and the search query.
 function fetchSearch(search) {
-	let apiKey = "AIzaSyAeEknscJNtuNE1OHys1LJ8lgiLDoMuURQ"; 
+	let apiKey = "AIzaSyAeEknscJNtuNE1OHys1LJ8lgiLDoMuURQ";
 	fetch(
-		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=5&q=${search}`
+		`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&maxResults=1&q=${search}`
 	)
 		.then((response) => response.json())
 		.then(renderResult);
@@ -122,7 +122,7 @@ function renderResult(data) {
 	let list = document.getElementById("res");
 	list.textContent = "";
 
-	list.replaceChildren()
+	list.replaceChildren();
 
 	data.items.forEach((element) => {
 		let listed = document.createElement("li");
@@ -141,7 +141,7 @@ function renderResult(data) {
 			renderingDiv.innerHTML =
 				'<iframe src="https://www.youtube.com/embed/' +
 				videoId +
-				'" width="100%" height="100%"></iframe>';
+				'" width="100%" height="100%" allow="fullscreen"></iframe>';
 			getConsole();
 		};
 
